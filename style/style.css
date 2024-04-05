@@ -50,7 +50,7 @@ main{
 }
 
 .banner{
-    height: 800px;
+    width: 1170px;
     margin: 90px 135px;
     display: flex;
     align-items: center;
@@ -62,8 +62,12 @@ main{
     width: 50%;
 }
 
+.imgbanner{
+    width: 50%;
+}
+
 .containersocial{
-    padding: 25px;
+    padding: 25px 137px;
     background-color: #F5F5F5;
     display: flex;
 }
@@ -134,15 +138,12 @@ main{
     max-width: 270px;
     border: none;
     padding: 18px 141px 18px 18px;
+ 
 }
 
 .titlep{
     margin-bottom: 40px;
     width: 90%;
-}
-
-.imglist img{ 
-    object-fit: contain;
 }
 
 .circle{
@@ -153,11 +154,8 @@ main{
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.circle img{
-    display: block;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2d{
