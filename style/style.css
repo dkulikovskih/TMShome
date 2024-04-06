@@ -35,6 +35,7 @@ nav{
     font-weight: 600;
     color: #ffffff;
     font-size: 14px;
+    line-height: 16px;
 }
 
 .nav-item{
@@ -53,14 +54,9 @@ nav{
     line-height: 44px;
 }
 
-main{
-    
-}
-
 .banner{
     padding: 90px 0px;
     background-color: rgba(255, 255, 255, 0.69);
-    display: flex;
 }
 
 .banner .container{
@@ -82,18 +78,34 @@ main{
     width: 50%;
 }
 
-.containersocial{
-    padding: 25px 137px;
+.social{
+    padding: 25px 0;
     background-color: #F5F5F5;
+}
+
+.social-info{
+    max-width: 520px;
+}
+
+.social .container{
     display: flex;
 }
 
-.socialicon{
-    padding: 20px 0px;
-  }
+.social-icons{
+    margin: auto 0 auto auto;
+}
+
+.social p{
+    font-size: 18px;
+    line-height: 21px;
+}
 
 .icon{
-    padding: 0px 14px;
+    margin-right: 28px;
+}
+
+.icon:last-child{
+    margin-right: 0px;
 }
 
 .containers{
@@ -107,6 +119,7 @@ main{
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 20px;
+    line-height: 28px;
 }
 
 .title{
@@ -182,28 +195,47 @@ main{
     line-height: 28px;
     font-weight: bold;
     margin-bottom: 24px;
+    text-align: center;
 }
+
 
 .cards{
     display: flex;
-    justify-content: center;
-    
 }
 
 .card{
     text-align: center;
-    margin-left: 13px;
-    margin-right: 13px;
+    margin-right: 27px;
+}
+
+.card:last-child{
+    margin-right: 0px;
 }
 
 .header3{
     text-align: center;
 }
 
-section{
-    padding: 80px 135px;
+.section3{
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .p3{
     margin-bottom: 77px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+}
+
+.p2d{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-icon{
+    
 }
