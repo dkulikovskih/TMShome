@@ -42,6 +42,7 @@ nav{
     color: #04193E;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
 }
 
 .h2l{
@@ -135,7 +136,7 @@ nav{
 .h2s{
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
     line-height: 28px;
 }
