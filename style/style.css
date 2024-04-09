@@ -38,6 +38,21 @@ nav{
     line-height: 16px;
 }
 
+.psocial{
+    color: #04193E;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.h2l{
+    color: #333333;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
 .nav-item{
     margin-right: 18px;
 }
