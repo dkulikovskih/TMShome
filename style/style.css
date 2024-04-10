@@ -22,11 +22,15 @@ header{
     padding: 30px 0;
 }
 
+.header .container{
+    display: flex;
+}
+
 nav{
     margin: auto 0 auto auto;
 }
 
-.navi{
+.header__nav{
     display: flex;
     list-style: none;
 }
@@ -38,14 +42,18 @@ nav{
     line-height: 16px;
 }
 
-.psocial{
+.social-info__p{
     color: #04193E;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
 }
 
-.h2l{
+.articles{
+    margin-bottom: 80px;
+}
+
+.social-info__title{
     color: #333333;
     font-size: 24px;
     line-height: 28px;
@@ -109,7 +117,7 @@ nav{
     padding: 0 15px;
 }
 
-.banner-img{
+.banner__img{
     width: 50%;
 }
 
@@ -136,21 +144,15 @@ nav{
     line-height: 21px;
 }
 
-.icon{
+.social-icons__item{
     margin-right: 28px;
 }
 
-.icon:last-child{
+.social-icons__item:last-child{
     margin-right: 0px;
 }
 
-.containers{
-    margin: 0 auto;
-    display: flex;
-    max-width: 1200px;
-}
-
-.h2s{
+.center-title{
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
@@ -158,20 +160,12 @@ nav{
     line-height: 28px;
 }
 
-.title{
+.banner__title{
     font-weight: bold;
     font-size: 48px;
     line-height: 54px;
     color: #04193E;
     margin-bottom: 20px;
-}
-
-.elem{
-    width: 91px;
-    height: 91px;
-    background-color: transparent;
-    border: 1px  solid #04193E;
-    border-radius: 50%;
 }
 
 .line{
@@ -181,7 +175,7 @@ nav{
     margin-bottom: 20px;
 }
 
-.linecenter{
+.center-line{
     width: 154px;
     height: 0px;
     border-top: 1px  solid #04193E;
@@ -190,11 +184,11 @@ nav{
     margin-right: auto;
 }
 
-.imgtitle{
+.banner-image{
     width: 100%;
 }
 
-.btn{
+.banner__btn{
     background-color: #04193E;
     color: #ffffff;
     font-size: 18px;
@@ -207,14 +201,14 @@ nav{
     display: inline-block;
 }
 
-.titlep{
+.banner__p{
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 40px;
     max-width: 485px;
 }
 
-.circle{
+.card__circle{
     width: 92px;
     height: 92px;
     border: 1px solid #04193E;
@@ -223,7 +217,7 @@ nav{
     display: flex;
 }
 
-.circle img{
+.card__circle img{
     margin: auto;
 }
 
@@ -234,8 +228,7 @@ h3{
     margin-bottom: 24px;
 }
 
-
-.cards{
+.articles__cards{
     display: flex;
 }
 
@@ -248,7 +241,7 @@ h3{
     margin-right: 0px;
 }
 
-.header3{
+.center-header{
     text-align: center;
     margin-bottom: 77px;
 }
@@ -259,13 +252,13 @@ h3{
     margin-bottom: 80px;
 }
 
-.p3{
+.center-p{
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
 }
 
-.p2d{
+.card__p{
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
