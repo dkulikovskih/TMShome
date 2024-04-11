@@ -30,19 +30,19 @@ nav{
     margin: auto 0 auto auto;
 }
 
-.header__nav{
+.nav__list{
     display: flex;
     list-style: none;
 }
 
-.nav-link{
+.nav__link{
     font-weight: 600;
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
 }
 
-.social-info__p{
+.social__text{
     color: #04193E;
     font-size: 18px;
     line-height: 21px;
@@ -53,7 +53,7 @@ nav{
     margin-bottom: 80px;
 }
 
-.social-info__title{
+.social__title{
     color: #333333;
     font-size: 24px;
     line-height: 28px;
@@ -62,11 +62,11 @@ nav{
     margin-bottom: 20px;
 }
 
-.nav-item{
+.nav__item{
     margin-right: 18px;
 }
 
-.nav-item:last-child{
+.nav__item:last-child{
     margin-right: 0;
 }
 
@@ -117,7 +117,7 @@ nav{
     padding: 0 15px;
 }
 
-.banner__img{
+.banner__wrap-img{
     width: 50%;
 }
 
@@ -127,7 +127,7 @@ nav{
     margin-bottom: 80px;
 }
 
-.social-info{
+.social__info{
     max-width: 520px;
 }
 
@@ -144,15 +144,15 @@ nav{
     line-height: 21px;
 }
 
-.social-icons__item{
+.social__link{
     margin-right: 28px;
 }
 
-.social-icons__item:last-child{
+.social__link:last-child{
     margin-right: 0px;
 }
 
-.center-title{
+.head__title{
     color: #333333;
     text-transform: uppercase;
     font-size: 24px;
@@ -176,7 +176,7 @@ nav{
     margin-bottom: 20px;
 }
 
-.center-line{
+.head__line{
     width: 154px;
     height: 0px;
     border-top: 1px  solid #04193E;
@@ -202,14 +202,14 @@ nav{
     display: inline-block;
 }
 
-.banner__p{
+.banner__text{
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 40px;
     max-width: 485px;
 }
 
-.card__circle{
+.card__wrap-img{
     width: 92px;
     height: 92px;
     border: 1px solid #04193E;
@@ -218,11 +218,12 @@ nav{
     display: flex;
 }
 
-.card__circle img{
+.card__img{
     margin: auto;
 }
 
 h3{
+    color: #333333;
     font-size: 18px;
     line-height: 28px;
     font-weight: bold;
@@ -242,8 +243,15 @@ h3{
     margin-right: 0px;
 }
 
-.center-header{
+.head{
     text-align: center;
+}
+
+.container .head{
+    margin-bottom: 77px;
+}
+
+.work .container{
     margin-bottom: 77px;
 }
 
@@ -253,13 +261,13 @@ h3{
     margin-bottom: 80px;
 }
 
-.center-p{
+.head__text{
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
 }
 
-.card__p{
+.card__text{
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
@@ -334,3 +342,4 @@ h3{
     font-size: 18px;
     line-height: 22px;
 }
+
