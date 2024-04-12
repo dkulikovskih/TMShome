@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="animated/css/animate.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="animated/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <title>Template</title>
 </head>
 <body>
@@ -44,8 +47,8 @@
 <main class="main">
     <section class="banner"> <!-- container -->
         <div class="container">
-            <div class="banner__info">
-                <h1 class="banner__title">When you consider how crucial security can be</h1>
+            <div class="banner__info fadeInUp wow">
+                <h1 class="banner__title fadeInUp wow">When you consider how crucial security can be</h1>
                 <div class="line"></div>
                 <p class="banner__text">
                     When you consider how crucial security can be, and when you think of all the options that you’re faced with today, one thing becomes clear. You need a contractor with experience.
@@ -53,13 +56,13 @@
                 <a href="#" class="banner__btn">Learn more</a>
             </div>
     
-            <div class="banner__wrap-img">
+            <div class="banner__wrap-img fadeInUp wow">
                 <img src="img/img.png" alt="When you consider how crucial security can be" class="banner-image">
             </div>
         </div>
     </section>
 
-    <section class="social">
+    <section class="social fadeInUp wow">
         <div class="container">
             <div class="social__info">
                 <h2 class="social__title">Social Media</h2>
@@ -78,7 +81,7 @@
         </div>
     </section>
 
-    <section class="articles">
+    <section class="articles fadeInUp wow">
         <div class="container">
             <div class="head">
                 <h2 class="head__title">OUR ARTICLES</h2>
@@ -87,7 +90,7 @@
             </div>
 
             <div class="articles__cards">
-                <div class="card">
+                <div class="card flipInX wow" data-wow-delay="0.2s">
                     <div class="card__wrap-img">
                         <img src="img/light.svg" alt="light" class="card__img">
                     </div>
@@ -95,7 +98,7 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
 
-                <div class="card">
+                <div class="card flipInX wow" data-wow-delay="0.4s">
                     <div class="card__wrap-img">
                         <img src="img/keyboard.svg" alt="keyboard" class="card__img">
                     </div>
@@ -103,7 +106,7 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
 
-                <div class="card">
+                <div class="card flipInX wow" data-wow-delay="0.6s">
                     <div class="card__wrap-img">
                         <img src="img/thunder.svg" alt="thunder" class="card__img">
                     </div>
@@ -114,13 +117,30 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews fadeInUp wow">
         <div class="container">
-
+            <div class="reviews__arrow-left">
+                <img src="img/arrow-left.svg" alt="">
+            </div>
+            <div class="slider">
+                <div class="slider__avatar">
+                    <img src="img/avatar.png" alt="">
+                </div>
+                <div class="slider__info">
+                    <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</div>
+                    <div class="slider__name">
+                        <p>Jon Doe</p>
+                        <div class="slider__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__arrow-right">
+                <img src="img/arrow-right.svg" alt="">
+            </div>
         </div>
     </section>
 
-    <section class="work">
+    <section class="work fadeInUp wow">
         <div class="container">
             <div class="head">
                 <h2 class="head__title">some of owr work</h2>
@@ -129,32 +149,24 @@
             </div>
         </div>
 
-        <div class="gallery">
-            <div class="gallery__column">
-                <img src="img/1.png" alt="">
-                <img src="img/2.png" alt="">
-            </div>
-            <div class="gallery__column">
-                <img src="img/3.png" alt="">
-                <div class="gallery__gradient-image"><img src="img/4.png" alt="">
+        <div class="gallery fadeInUp wow">
+                <div class="gallery__img"><img src="img/1.png" alt=""></div>
+                <div class="gallery__img"><img src="img/2.png" alt=""></div>
+                <div class="gallery__img"><img src="img/3.png" alt=""></div>
+                <div class="gallery__img"><img src="img/4.png" alt=""></div>
+                <div class="gallery__img"><img src="img/5.png" alt="" ></div>
+                <div class="gallery__gradient-image"><img src="img/6.png" alt="">
                     <div class="gradient-cover">
                         <img src="img/cover-cup.svg" alt="cover-cup">
                         <h3 class="gradient-cover__title">creatively design</h3>
                         <p class="gradient-cover__p">Lorem ipsum dolor sit</p>
                     </div>
                 </div>
-            </div>
-            <div class="gallery__column">
-                <img src="img/5.png" alt="">
-            </div>
-            <div class="gallery__column">
-                <img src="img/6.png" alt="">
-                <img src="img/7.png" alt="">
-            </div>
+                <div class="gallery__img"><img src="img/7.png" alt=""></div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact fadeInUp wow">
         <div class="container">
             <div class="head">
                 <h2 class="head__title">contact us</h2>

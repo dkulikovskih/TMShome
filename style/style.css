@@ -281,22 +281,101 @@ h3{
     margin-bottom: 80px;
 }
 
+.reviews .container{
+    position: relative;
+    max-width: 1092px;
+}
+
+.reviews__arrow-left img{
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.reviews__arrow-right img{
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.slider{
+    display: grid;
+    grid-template-columns: 167px 720px;
+    column-gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.slider__avatar{
+}
+
+.slider__info{
+    align-self: center;
+}
+
+.slider__text {
+    color: #04193E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.slider__line {
+    width: 70px;
+    height: 0px;
+    border-top: 1px  solid #04193E;
+}
+
+.slider__name{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    position: relative;
+}
+
+.slider__name p{
+    padding-left: 100px;
+}
+
+.slider__line{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+}
+
 .gallery{
-    width: 100%;
-    display: flex;
-    margin: 0 0 80px 0;
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 378px;
+    margin-bottom: 80px;
 }
 
-.gallery__column{
-    margin: 0;
+.gallery__img{
+    display: inline-block;
+    overflow: hidden;
 }
 
-.gallery__column img{
-    width: 100%;
-    object-fit: cover;
-    margin: 0;
-    display: block;
+.gallery__img img{
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery__img:nth-child(3){
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.gallery__img img:hover{
+    scale: 1.05;
+    filter: contrast(140%) grayscale(30%);
 }
 
 .gallery__gradient-image{
@@ -315,7 +394,6 @@ h3{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .gradient-cover img{
@@ -342,4 +420,3 @@ h3{
     font-size: 18px;
     line-height: 22px;
 }
-
