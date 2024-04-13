@@ -237,6 +237,16 @@ h3{
 .card{
     text-align: center;
     margin-right: 27px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover{
+    scale: 1.08;
+}
+
+.articles__cards:hover > .card:not(:hover){
+    filter: blur(2px);
+    transform: scale(0.9);
 }
 
 .card:last-child{
@@ -375,7 +385,7 @@ h3{
 
 .gallery__img img:hover{
     scale: 1.05;
-    filter: contrast(140%) grayscale(30%);
+    filter: contrast(140%) grayscale(30%) saturate(90%);
 }
 
 .gallery__gradient-image{
