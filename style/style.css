@@ -200,8 +200,15 @@ nav{
     border: none;
     padding: 18px;
     display: inline-block;
+    transition: all 0.2s;
 }
 
+.banner__btn:hover{
+    background-color: #04193e5d;
+    color: #FFFFFF;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
 
 .banner__text{
     font-size: 16px;
@@ -449,6 +456,22 @@ input{
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
+    transition: all 0.2s;
+}
+
+input:hover{
+    background-color: #04193e09;
+}
+
+input:focus{
+    background-color: #04193e09;
+    caret-color: #04193E;
+    color: #04193E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+    padding-left: 15px;
 }
 
 input::placeholder{
@@ -456,6 +479,15 @@ input::placeholder{
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    transition: all 0.2s;
+}
+
+input:hover::placeholder{
+    padding-left: 15px;
+}
+
+input:focus::placeholder{
+    color: transparent;
 }
 
 textarea{
@@ -489,6 +521,15 @@ input[type="submit"]{
     display: inline-block;
     margin: 0 auto;
     grid-column: 1/-1;
+    transition: all 0.2s;
+    border: 1px solid #04193E;
+}
+
+input[type="submit"]:hover{
+    background-color: #FFFFFF;
+    color: #04193E;
+    border: 1px solid #04193E;
+    cursor: pointer;
 }
 
 .info{
