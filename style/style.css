@@ -10,6 +10,11 @@ body{
     font-optical-sizing: auto;
 }
 
+::selection {
+    background: #04193E; 
+    color: #fff; 
+}
+
 .containerh{
     max-width: 1200px;
     margin: 0 auto;
