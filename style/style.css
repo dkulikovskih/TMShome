@@ -30,6 +30,7 @@ body{
 header{
     background-color: #04193E;
     padding: 30px 0;
+    cursor: url(/img/Cursor-white.svg), default;
 }
 
 .header .container{
@@ -211,6 +212,7 @@ nav{
     padding: 18px;
     display: inline-block;
     transition: all 0.2s;
+    cursor: url(/img/Cursor-white.svg), default;
 }
 
 .banner__btn:hover{
@@ -570,6 +572,10 @@ input[type="submit"]:hover{
 .info{
     background-color: #353C65;
     padding: 76px 0;
+}
+
+footer{
+    cursor: url(/img/Cursor-white.svg), default;
 }
 
 footer .container{
