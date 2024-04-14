@@ -464,7 +464,7 @@ input:hover{
 }
 
 input:focus{
-    background-color: #04193e09;
+    background-color: #173b7a09;
     caret-color: #04193E;
     color: #04193E;
     font-size: 14px;
@@ -498,6 +498,22 @@ textarea{
     border-left: 0px;
     border-right: 0px;
     resize: none;
+    transition: all 0.2s;
+}
+
+textarea:hover{
+    background-color: #04193e09;
+}
+
+textarea:focus{
+    background-color: #173b7a09;
+    caret-color: #04193E;
+    color: #04193E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+    padding-left: 15px;
 }
 
 textarea::placeholder{
@@ -506,6 +522,15 @@ textarea::placeholder{
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    transition: all 0.2s;
+}
+
+textarea:hover::placeholder{
+    padding-left: 15px;
+}
+
+textarea:focus::placeholder{
+    color: transparent;
 }
 
 input[type="submit"]{
