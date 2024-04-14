@@ -370,7 +370,6 @@ h3{
 }
 
 .gallery__img{
-    display: inline-block;
     overflow: hidden;
 }
 
