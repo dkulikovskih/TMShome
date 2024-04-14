@@ -51,6 +51,13 @@ nav{
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
+    transition: all 0.2s;
+    cursor: url(/img/focus.svg), pointer;
+}
+
+.nav__link:hover{
+    color: #86B0FA;
+    cursor: url(/img/focus.svg), pointer;
 }
 
 .social__text{
@@ -469,6 +476,7 @@ input{
     border-left: 0px;
     border-right: 0px;
     transition: all 0.2s;
+    cursor: url(/img/input.svg), text;
 }
 
 input:hover{
@@ -484,6 +492,7 @@ input:focus{
     line-height: 20px;
     outline: none;
     padding-left: 15px;
+    cursor: none;
 }
 
 input::placeholder{
@@ -511,6 +520,7 @@ textarea{
     border-right: 0px;
     resize: none;
     transition: all 0.2s;
+    cursor: url(/img/input.svg), text;
 }
 
 textarea:hover{
@@ -559,14 +569,11 @@ input[type="submit"]{
     margin: 0 auto;
     grid-column: 1/-1;
     transition: all 0.2s;
-    border: 1px solid #04193E;
+    cursor: url(/img/Cursor-white.svg), pointer;
 }
 
 input[type="submit"]:hover{
-    background-color: #FFFFFF;
-    color: #04193E;
-    border: 1px solid #04193E;
-    cursor: pointer;
+    background-color: rgba(11, 34, 73, 0.725);
 }
 
 .info{
