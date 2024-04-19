@@ -20,11 +20,8 @@ body{
     color: #fff; 
 }
 
-.containerh{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    padding: 0 15px;
+.container .head{
+    margin-bottom: 77px;
 }
 
 header{
@@ -157,11 +154,6 @@ nav{
     margin: auto 0 auto auto;
 }
 
-.social p{
-    font-size: 18px;
-    line-height: 21px;
-}
-
 .social__link{
     margin-right: 28px;
 }
@@ -249,7 +241,7 @@ nav{
     margin: auto;
 }
 
-h3{
+.card__title{
     color: #333333;
     font-size: 18px;
     line-height: 28px;
@@ -284,10 +276,6 @@ h3{
     text-align: center;
 }
 
-.container .head{
-    margin-bottom: 77px;
-}
-
 .work .container{
     margin-bottom: 77px;
 }
@@ -320,7 +308,7 @@ h3{
 
 .reviews .container{
     position: relative;
-    max-width: 1092px;
+    max-width: 927px;
 }
 
 .reviews__arrow-left img{
@@ -341,16 +329,26 @@ h3{
 
 .slider{
     display: grid;
-    grid-template-columns: 167px 720px;
+    grid-template-columns: 167px 1fr;
     column-gap: 40px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.slider__avatar{
+.slider__wrap-img{
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.slider__info{
+.slider__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__wrapper-text{
     align-self: center;
 }
 
@@ -361,6 +359,7 @@ h3{
     line-height: 21px;
     margin-bottom: 20px;
 }
+
 .slider__line {
     width: 70px;
     height: 0px;
@@ -373,17 +372,15 @@ h3{
     font-weight: 500;
     line-height: 34px;
     position: relative;
+    padding-left: 110px;
 }
 
-.slider__name p{
-    padding-left: 100px;
-}
-
-.slider__line{
+.slider__name::before{
+    content: '';
     color: #000000;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 34px;
+    border: 1px solid #04193E;
+    width: 70px;
+    height: 0px;
     top: 50%;
     left: 0;
     position: absolute;
@@ -392,36 +389,43 @@ h3{
 .gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 378px;
+}
+
+.gallery__item{
+    padding-top: 105%;
+    position: relative;
 }
 
 .gallery__img{
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
 }
 
-.gallery__img img{
-    transition: all 0.2s ease-in-out;
-}
-
-.gallery__img:nth-child(3){
+.gallery__item:nth-child(3){
     grid-row: 1 / 3;
     grid-column: 3 / 4;
 }
 
-.gallery__img img:hover{
-    scale: 1.05;
-    filter: contrast(140%) grayscale(30%) saturate(90%);
-}
-
-.gallery__gradient-image{
+.gradient__cover{
+    background: linear-gradient(#E98283E5, #EDD789E5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: cover;
-    margin: 0;
-    display: block;
-    position: relative;
+    height: 100%;
+    opacity: 0%;
+    transition: all 0.2s;
 }
 
-.gradient-cover{
+.gradient__cover:hover{
     background: linear-gradient(#E98283E5, #EDD789E5);
     padding: 114px 0;
     position: absolute;
@@ -429,16 +433,14 @@ h3{
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 100%;
 }
 
-.gradient-cover img{
-    display: block;
-    margin: 0 auto 40px auto;
-    width: 40px;
-    height: 42px;
+.cover__icon{
+    margin-bottom: 40px;
 }
 
-.gradient-cover__title{
+.cover__title{
     color: #FFFFFF;
     text-transform: uppercase;
     line-height: 26px;
@@ -449,7 +451,7 @@ h3{
     text-align: center;
 }
 
-.gradient-cover__p{
+.cover__text{
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -592,12 +594,13 @@ footer .container{
     grid-column-gap: 30px;
 }
 
-.info__column h3{
+.info__column-title{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
 .info__column{
@@ -626,14 +629,14 @@ footer .container{
     margin: 0 auto;
 }
 
-.copyright__block p{
+.copyright__text{
     color: #808080;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
 }
 
-.copyright__block span{
+.copyright__span{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
