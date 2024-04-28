@@ -687,6 +687,45 @@ footer .container{
     line-height: 21px;
 }
 
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .banner__title{
+        font-size: 44px;
+        line-height: 46px;
+    }
+
+    .line {
+        width: 130px;
+    }
+
+    .banner__btn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .social__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .head__line{
+        width: 148px;
+    }
+
+    .head__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .articles__cards{
+        column-gap: 17px;
+    }
+}
+
 @media (max-width: 720px) {
     .header__burger{
         display: block;
@@ -733,6 +772,10 @@ footer .container{
         padding: 40px 15px;
     }
 
+    .banner__info{
+        width: 100%;
+    }
+
     .banner .container {
         flex-direction: column;
         align-items: center;
@@ -740,7 +783,8 @@ footer .container{
     }
 
     .banner__btn {
-        width: 290px;
+        width: 100%;
+        max-width: 290px;
     }
 
     .banner__wrap-img {
