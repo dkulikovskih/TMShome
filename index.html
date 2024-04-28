@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="animated/js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <script defer src="animated/js/main.js"></script>
     <title>Template</title>
 </head>
 <body>
-<header class="header">
+<header class="header open">
     <div class="container">
     <a href="#" class="logo">Logo</a>
     <nav class="nav">
@@ -39,6 +40,11 @@
             </li>
             </ul>
         </nav>
+        <button class="header__burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
@@ -117,19 +123,19 @@
         </div>
     </section>
 
-    <section class="reviews fadeInUp wow">
+    <div class="reviews fadeInUp wow">
         <div class="container">
             <div class="slider">
                 <div class="slider__wrapper-img">
                     <img class="slider__img" src="img/avatar.png" alt="">
                 </div>
                 <div class="slider__wrapper-text">
-                    <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</div>
+                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</>
                     <p class="slider__name">Jon Doe</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="work fadeInUp wow">
         <div class="container">
@@ -187,7 +193,7 @@
                         <h3 class="cover__title">creatively design</h3>
                         <p class="cover__text">Lorem ipsum dolor sit</p>
                     </div>
-                    <img src="img/6.png" alt="">
+                    <img class="gallery__img" src="img/6.png" alt="">
                 </div>
                 <div class="gallery__wrap-img">
                     <div class="gradient__cover">

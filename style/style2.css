@@ -85,6 +85,7 @@
     font-weight: 200;
     font-size: 16px;
 }
+
 .form__group-adress {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
