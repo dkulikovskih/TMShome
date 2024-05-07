@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="animated/css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="animated/js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script defer src="animated/js/main.js"></script>
@@ -74,7 +76,7 @@
                 <p class="social__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                 </p>
-                </div>
+            </div>
             
             <div class="social-icons">
                 <a href="#" class="social__link"><img src="/img/facebook.svg" alt="facebook" class="social__image"></a>
@@ -122,15 +124,42 @@
     </section>
 
     <div class="reviews fadeInUp wow">
-        <div class="container">
-            <div class="slider">
-                <div class="slider__wrapper-img">
-                    <img class="slider__img" src="img/avatar.png" alt="">
+        <div class="container reviews__container">
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews__slide">
+                        <div class="slider__wrapper-img">
+                            <img class="slider__img" src="img/avatar.png" alt="">
+                        </div>
+                        <div class="slider__wrapper-text">
+                            <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</d>
+                            <p class="slider__name">Jon Doe</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide reviews__slide">
+                        <div class="slider__wrapper-img">
+                            <img class="slider__img" src="img/avatar.png" alt="">
+                        </div>
+                        <div class="slider__wrapper-text">
+                            <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</>
+                            <p class="slider__name">Jon Doe</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide reviews__slide">
+                        <div class="slider__wrapper-img">
+                            <img class="slider__img" src="img/avatar.png" alt="">
+                        </div>
+                        <div class="slider__wrapper-text">
+                            <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</>
+                            <p class="slider__name">Jon Doe</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider__wrapper-text">
-                    <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</>
-                    <p class="slider__name">Jon Doe</p>
-                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -255,5 +284,14 @@
         </div>
     </footer>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".reviewSwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

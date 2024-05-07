@@ -355,31 +355,28 @@ nav{
     margin-bottom: 80px;
 }
 
-.reviews .container{
+.reviews__container{
     position: relative;
-    max-width: 927px;
+    max-width: 1122px;
+    overflow: hidden;
 }
 
-.reviews__arrow-left img{
-    width: 16px;
-    height: 30px;
-    position: absolute;
-    left: 0;
-    top: 50%;
+.reviewSwiper{
+    width: 100%;
 }
 
-.reviews__arrow-right img{
-    width: 16px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 50%;
+.reviewSwiper .swiper-button-next, .reviewSwiper .swiper-button-prev{
+    width: 42px;
+    height: 42px;
+    color: #04193E;
 }
 
-.slider{
+.reviews__slide{
     display: grid;
     grid-template-columns: 167px 1fr;
     column-gap: 40px;
+    align-items: center;
+    padding: 0 82px;
 }
 
 .slider__wraper-img{
@@ -803,6 +800,15 @@ footer .container{
         text-align: center;
     }
 
+    .social {
+        margin-bottom: 30px;
+    }
+
+    .social__info .line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .slider{
         display: flex;
         flex-direction: column;
@@ -813,6 +819,10 @@ footer .container{
         flex-direction: column;
         justify-content: center;
         gap: 30px;
+    }
+
+    .articles .container {
+        margin-bottom: 30px;
     }
 
     .banner__btn {
